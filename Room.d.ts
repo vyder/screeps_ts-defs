@@ -1,7 +1,8 @@
-/// <reference path="./Positionable.d.ts"/>
-/// <reference path="./RoomPosition.d.ts"/>
-/// <reference path="./Structure.d.ts"/>
-/// <reference path="./SurvivalGameInfo.d.ts"/>
+///<reference path="Controller.d.ts"/>
+///<reference path="Memorizes.d.ts"/>
+/// <reference path="Positionable.d.ts"/>
+/// <reference path="RoomPosition.d.ts"/>
+/// <reference path="SurvivalGameInfo.d.ts"/>
 
 declare module Screeps {
 
@@ -10,22 +11,14 @@ declare module Screeps {
      * are in. Every object in the room contains its linked Room instance
      * in the room property.
      */
-    interface Room {
+    interface Room extends Memorizes {
 
         /**
          * The controller of this Room, if present
          *
-         * @type Structure
+         * @type Controller
          */
-        controller: Structure;
-
-        /**
-         * A shorthand to Memory.rooms[room.name]. You can use it for quick
-         * access to the Room's specific memory data object.
-         *
-         * @type any
-         */
-        memory: any;
+        controller: Controller;
 
         /**
          * A string Game constant representing the Game mode

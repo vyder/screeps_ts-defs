@@ -1,3 +1,4 @@
+///<reference path="Destructible.d.ts"/>
 /// <reference path="./Game.d.ts"/>
 /// <reference path="./GameObject.d.ts"/>
 /// <reference path="./Owner.d.ts"/>
@@ -5,21 +6,7 @@
 /// <reference path="./RoomPosition.d.ts"/>
 
 declare module Screeps {
-    interface Structure extends GameObject, Positionable {
-
-        /**
-         * The current amount of hit points of the Structure
-         *
-         * @type number
-         */
-        hits:number;
-
-        /**
-         * The total amount of hit points of the Structure
-         *
-         * @type number
-         */
-        hitsMax:number;
+    interface Structure extends GameObject, Positionable, Destructible {
 
         /**
          * Whether this is your own structure

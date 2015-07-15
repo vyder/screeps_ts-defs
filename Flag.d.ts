@@ -1,4 +1,5 @@
 ///<reference path="GameObject.d.ts"/>
+///<reference path="Memorizes.d.ts"/>
 ///<reference path="Positionable.d.ts"/>
 
 declare module Screeps {
@@ -7,7 +8,7 @@ declare module Screeps {
      * A Flag can be used to mark particular spots in a Room.
      * Flags are visible to their Owners only.
      */
-    interface Flag extends GameObject, Positionable {
+    interface Flag extends GameObject, Positionable, Memorizes {
 
         /**
          * Flag color. One of the Game Color constants:
@@ -25,15 +26,6 @@ declare module Screeps {
          * @type string
          */
         color: string;
-
-        /**
-         * A shorthand to Memory.flags[flag.name]. You can
-         * use it for quick access to the flag's specific
-         * memory data object.
-         *
-         * @type any
-         */
-        memory: any;
 
         /**
          * You can choose the Flag's name while creating a new Flag,
