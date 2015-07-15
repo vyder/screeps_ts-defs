@@ -22,3 +22,11 @@ TypeScript. It's a TODO that I'll get to eventually.
 1. Set up an example Grunt project that uses this library
 2. Create some file structure
 3. Figure out how to add tests
+
+---
+
+Resources:
+* [Screeps - The Game](https://screeps.com)
+* [Screeps - API](http://support.screeps.com/hc/en-us/articles/203084991-API-Reference)
+* [TypeScript Handbook](http://www.typescriptlang.org/Handbook)
+*
