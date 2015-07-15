@@ -1,9 +1,19 @@
+///<reference path="ConstructionSite.d.ts"/>
+///<reference path="Controller.d.ts"/>
 ///<reference path="Creep.d.ts"/>
+///<reference path="Energy.d.ts"/>
+///<reference path="Exit.d.ts"/>
+///<reference path="Extension.d.ts"/>
 ///<reference path="Flag.d.ts"/>
+///<reference path="KeeperLair.d.ts"/>
+///<reference path="Link.d.ts"/>
 ///<reference path="Map.d.ts"/>
+///<reference path="Owner.d.ts"/>
 ///<reference path="Room.d.ts"/>
+///<reference path="Source.d.ts"/>
 ///<reference path="Spawn.d.ts"/>
 ///<reference path="Structure.d.ts"/>
+///<reference path="Wall.d.ts"/>
 
 declare module Screeps {
     interface Game {
