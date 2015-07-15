@@ -20,4 +20,5 @@ TypeScript. It's a TODO that I'll get to eventually.
 
 ## TODO:
 1. Set up an example Grunt project that uses this library
-2. Figure out how to add tests
+2. Create some file structure
+3. Figure out how to add tests
