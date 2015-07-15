@@ -8,27 +8,7 @@ declare module Screeps {
      * @class
      * @constructor
      */
-    interface Exit {
-        /**
-         * A unique object identificator.
-         *
-         * @type string
-         */
-        id: string;
-
-        /**
-         * The link to the Room object. May not be available in case a flag is placed in a room which you do not have access to.
-         *
-         * @type Room
-         */
-        room: Room;
-
-        /**
-         * An object representing the position of this structure in the room.
-         *
-         * @type RoomPosition
-         */
-        pos: RoomPosition;
+    interface Exit extends GameObject, Positionable {
 
         /**
          * The direction of the exit. One of the following constants:

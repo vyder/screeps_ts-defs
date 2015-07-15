@@ -8,6 +8,19 @@ declare module Screeps {
      * is defined by the Positionable interface.
      */
     interface Positionable {
+        /**
+         * Represents the position of this object in the Room
+         *
+         * @type RoomPosition
+         */
         pos: RoomPosition;
+
+        /**
+         * The link to the Room Object. May not be available in case a
+         * placed in a Room which you do not have access to
+         *
+         * @type Room
+         */
+        room: Room;
     }
 }

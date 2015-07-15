@@ -1,3 +1,4 @@
+/// <reference path="./GameObject.d.ts"/>
 /// <reference path="./Room.d.ts"/>
 /// <reference path="./RoomPosition.d.ts"/>
 
@@ -8,28 +9,7 @@ declare module Screeps {
      * @class
      * @constructor
      */
-    interface Source {
-        /**
-         * A unique object identificator.
-         *
-         * @type string
-         */
-        id: string;
-
-        /**
-         * The link to the Room object of this structure.
-         *
-         * @type Room
-         */
-        room: Room;
-
-        /**
-         * An object representing the position of this structure in the room.
-         *
-         * @type RoomPosition
-         */
-        pos: RoomPosition;
-
+    interface Source extends GameObject, Positionable {
         /**
          * The remaining amount of energy.
          *
