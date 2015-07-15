@@ -1,13 +1,24 @@
-///<reference path="Destructible.d.ts"/>
-/// <reference path="./Game.d.ts"/>
-/// <reference path="./GameObject.d.ts"/>
+///<reference path="GameObject.d.ts"/>
 ///<reference path="Ownable.d.ts"/>
-/// <reference path="./Owner.d.ts"/>
-/// <reference path="./Room.d.ts"/>
-/// <reference path="./RoomPosition.d.ts"/>
+///<reference path="Positionable.d.ts"/>
 
 declare module Screeps {
-    interface Structure extends GameObject, Positionable, Destructible, Ownable {
+    interface ConstructionSite extends GameObject, Ownable, Positionable {
+
+        /**
+         * The current construction progress
+         *
+         * @type number
+         */
+        progress: number;
+
+        /**
+         * The total construction progress needed for the
+         * structure to be built
+         *
+         * @type number
+         */
+        progressTotal: number;
 
         /**
          * A string Game constant representing the type of this Structure:
@@ -25,8 +36,8 @@ declare module Screeps {
         structureType: string;
 
         /**
-         * Destroy this Structure immediately
+         * Remove this ConstructionSite
          */
-        destroy();
+        remove();
     }
 }

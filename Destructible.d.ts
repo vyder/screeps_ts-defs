@@ -17,5 +17,15 @@ declare module Screeps {
          * @type number
          */
         hitsMax:number;
+
+        /**
+         * Toggle auto notification when this object is under attack. The
+         * notification will be sent to your account email.
+         *
+         * Turned on by default.
+         *
+         * @arg {boolean} enabled - Whether to enable notifications or disable
+         */
+        notifyWhenAttacked(enabled:boolean);
     }
 }
